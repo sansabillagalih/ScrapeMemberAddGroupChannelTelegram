@@ -1,6 +1,9 @@
 # ScrapeMemberAddGroupChannelTelegram
 Scrape Member AddGroup Channel Telegram Automatically
 
+
+
+
 Usage:
 
     1. Download script
@@ -10,3 +13,17 @@ Usage:
     3. Buka cmd ketik: pip install telethon
     
     4. Run script nya 
+
+
+
+# scrappe.py
+
+Untuk scrape member grup
+
+# add_in_group.py
+
+Untuk masukin member ke grup
+
+# add_in_channel.py
+
+Untuk masukin member ke channel
