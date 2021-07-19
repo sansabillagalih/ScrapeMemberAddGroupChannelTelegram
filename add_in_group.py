@@ -87,9 +87,8 @@ try:
                 
                 if (int(startfrom) <= int(user['srno'])) and (int(user['srno']) <= int(endto)):
                     n += 1
-                    if n % 50 == 0:
-                        sleep(900)
-                        quit()
+                    
+
                     try:
                         print("[*] Adding {}".format(user['id']))
                         if mode == 1:
