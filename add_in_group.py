@@ -93,8 +93,8 @@ try:
                    
                     if user['username'] == "":
                         continue
-                        
-                    client(InviteToChannelRequest(target_group_entity, [user['username']]))
+                    user_to_add = client.get_input_entity(user['username'])
+                    client(InviteToChannelRequest(target_group_entity, [user_to_add]))
                     print(f"[*] Waiting for {delay} Seconds...")
                     sleep(delay)
                 except PeerFloodError:
