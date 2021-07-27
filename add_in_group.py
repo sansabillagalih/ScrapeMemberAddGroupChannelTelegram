@@ -76,7 +76,7 @@ try:
         g_index = input("[*] Enter a Number: ")
         target_group = groups[int(g_index)]
 
-        #target_group_entity = InputPeerChannel(target_group.id, target_group.access_hash)
+        target_group_entity = InputPeerChannel(target_group.id, target_group.access_hash)
         startfrom = int(input("[*] Start From = "))
         endto = int(input("[*] End To = "))
 
@@ -94,7 +94,7 @@ try:
                     if user['username'] == "":
                         continue
                         
-                    client(InviteToChannelRequest(target_group, [user['username']]))
+                    client(InviteToChannelRequest(target_group_entity, [user['username']]))
                     print(f"[*] Waiting for {delay} Seconds...")
                     sleep(delay)
                 except PeerFloodError:
