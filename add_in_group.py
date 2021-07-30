@@ -17,7 +17,6 @@ api_hash = '992cd4665a7b141dc5c9a340b58b9b4d'
 session_name = ''
 
 print(f"[*] Automation Adding Member Group Telegram!\n[*] Author: RJD")
-session_name = input("[*] Session Name:")
 
 try:
     client = TelegramClient(str(session_name), api_id, api_hash)
