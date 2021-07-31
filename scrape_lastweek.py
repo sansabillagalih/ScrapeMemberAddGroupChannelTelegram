@@ -40,7 +40,7 @@ try:
             i = 0
             for user in all_participants:
                 accept = True
-                if not user.status == UserStatusLastWeek():
+                if not user.status == UserStatusRecently():
                     accept = False
                 if accept:
                     i += 1
