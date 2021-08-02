@@ -59,10 +59,10 @@ try:
                     if user['username'] == "":
                         print("[*] No username, moving to next")
                         continue
-                    
+                    user_to_add = client.get_input_entity(user['username'])
                     client(InviteToChannelRequest(
                         channel_username,
-                        [user['username']]
+                        [user_to_add]
                     ))
                     
                     print(f"[*] Waiting for {delay} Seconds...")
