@@ -12,7 +12,7 @@ Usage:
 
     3. Buka cmd ketik: pip install telethon
     
-    4. Run script nya 
+    4. Run script: scrapper.py untuk ambil member nya, add in group.py untuk masuk in ke grup. 
 
 
 
